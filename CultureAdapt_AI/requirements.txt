@@ -1,0 +1,17 @@
+# Web interface
+streamlit
+
+# Gemini API and structured data models
+google-genai
+pydantic
+
+# Configuration and screenplay file parsing
+python-dotenv
+pymupdf
+python-docx
+
+# Generated visual cards
+Pillow
+
+# Tests
+pytest
