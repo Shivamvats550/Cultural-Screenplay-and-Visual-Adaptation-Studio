@@ -24,49 +24,37 @@ The application extracts scenes, characters, costumes, props, locations, and con
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Project architecture
+CultureAdapt_AI/
+│
+├── app/
+│   ├── models.py
+│   ├── workflow.py
+│   │
+│   ├── llm/
+│   │   └── gemini_provider.py
+│   │
+│   └── services/
+│       ├── parser.py
+│       ├── continuity.py
+│       └── image_generator.py
+│
+├── frontend/
+│   └── streamlit_app.py
+│
+├── tests/
+│   └── test_continuity.py
+│
+├── sample_data/
+│   └── sample_screenplay.txt
+│
+├── generated/
+│   └── visual_pack/
+│
+├── requirements.txt
+├── .env
+└── README.md
 
-'''text
-             Screenplay Upload
-                    │
-                    ▼
-             Document Parser
-                    │
-                    ▼
-             Gemini AI Extraction
-                    │
-          ┌─────────┼─────────┐
-          ▼         ▼         ▼
-       Scenes   Characters   Props
-          │         │         │
-          └─────────┼─────────┘
-                    ▼
-          Canonical Normalization
-                    │
-                    ▼
-          Cultural Adaptation Plan
-                    │
-                    ▼
-             Human Approval
-                    │
-                    ▼
-          Adapted Screenplay
-                    │
-                    ▼
-           Visual Generation
-                    │
-          ┌─────────┼─────────┐
-          ▼         ▼         ▼
-      Character  Costume    Scene
-        Bible      Bible    Keyframes
-          │         │         │
-          └─────────┼─────────┘
-                    ▼
-            Continuity Check
-                    │
-                    ▼
-              Final Output
-              '''
 
 ### Demo
 
