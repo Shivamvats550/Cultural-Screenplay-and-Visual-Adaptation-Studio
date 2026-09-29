@@ -24,39 +24,50 @@ The application extracts scenes, characters, costumes, props, locations, and con
 
 ---
 
-## 🔄 Project architecture
-CultureAdapt_AI/
-│
-├── app/
-│   ├── models.py
-│   ├── workflow.py
-│   │
-│   ├── llm/
-│   │   └── gemini_provider.py
-│   │
-│   └── services/
-│       ├── parser.py
-│       ├── continuity.py
-│       └── image_generator.py
-│
-├── frontend/
-│   └── streamlit_app.py
-│
-├── tests/
-│   └── test_continuity.py
-│
-├── sample_data/
-│   └── sample_screenplay.txt
-│
-├── generated/
-│   └── visual_pack/
-│
-├── requirements.txt
-├── .env
-└── README.md
+## 🔄 Project Workflow
 
+```text
+             Screenplay Upload
+                    │
+                    ▼
+             Document Parser
+                    │
+                    ▼
+             Gemini AI Extraction
+                    │
+          ┌─────────┼─────────┐
+          ▼         ▼         ▼
+       Scenes   Characters   Props
+          │         │         │
+          └─────────┼─────────┘
+                    ▼
+          Canonical Normalization
+                    │
+                    ▼
+          Cultural Adaptation Plan
+                    │
+                    ▼
+             Human Approval
+                    │
+                    ▼
+          Adapted Screenplay
+                    │
+                    ▼
+           Visual Generation
+                    │
+          ┌─────────┼─────────┐
+          ▼         ▼         ▼
+      Character  Costume    Scene
+        Bible      Bible    Keyframes
+          │         │         │
+          └─────────┼─────────┘
+                    ▼
+            Continuity Check
+                    │
+                    ▼
+              Final Output 
 
-### Demo
+## Demo
 
 <img width="1902" height="887" alt="Screenshot 2026-09-29 005436" src="https://github.com/user-attachments/assets/4384fa04-4e20-4b16-83b7-4728d746fea8" />
 <img width="1904" height="896" alt="Screenshot 2026-09-29 005457" src="https://github.com/user-attachments/assets/46fae578-1e77-4742-93f0-81b9ed11c919" />
