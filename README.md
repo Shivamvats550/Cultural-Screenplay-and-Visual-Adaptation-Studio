@@ -26,7 +26,7 @@ The application extracts scenes, characters, costumes, props, locations, and con
 
 ## 🔄 Project Workflow
 
-text
+'''text
              Screenplay Upload
                     │
                     ▼
@@ -66,6 +66,7 @@ text
                     │
                     ▼
               Final Output
+              '''
 
 ### Demo
 
