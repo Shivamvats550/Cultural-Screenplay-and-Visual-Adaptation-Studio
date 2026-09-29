@@ -66,7 +66,7 @@ The application extracts scenes, characters, costumes, props, locations, and con
                     │
                     ▼
               Final Output 
-
+```
 ## Demo
 
 <img width="1902" height="887" alt="Screenshot 2026-09-29 005436" src="https://github.com/user-attachments/assets/4384fa04-4e20-4b16-83b7-4728d746fea8" />
